@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.navbar {
+  background-color: #1A0B2E;
+  padding: 20px 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+.color-linear {
+  color: r;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.menu-btn {
+  display: none;
+}
+
+.btn-primary {
+  border: none;
+  font-size: 15px;
+  padding: 10px 24px 10px 24px;
+  border-radius: 20px;
+  weight: 130px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.btn-primary img {
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Small device  */
+
+@media screen and (max-width: 576px) {
+  .nav-container, .menu-btn {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu, .btn-primary {
+    display: none;
+  }
+}
+
+/* Medium Device */
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+  .nav-container, .menu-btn {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu, .btn-primary {
+    display: none;
+  }
+
+  
+  
+}
