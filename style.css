@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .font-inter {
@@ -31,7 +31,9 @@
   font-weight: bold;
 }
 .color-linear {
-  color: r;
+  background: linear-gradient(20deg,#F7E93F, #FB09B4, #9100F8);
+  background-clip: text;
+  color: transparent;
 }
 
 .menu {
@@ -51,7 +53,7 @@
   display: none;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary2 {
   border: none;
   font-size: 15px;
   padding: 10px 24px 10px 24px;
@@ -60,7 +62,7 @@
   align-items: center;
   display: flex;
   gap: 8px;
-  background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+  background: linear-gradient(45deg,#F7E93F, #FB09B4, #9100F8);
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -69,6 +71,108 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Hero Section */
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  position: relative;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-content {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  z-index: 1;
+}
+
+.hero-circle {
+  width: 360px;
+}
+
+.microphone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+}
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left:+250px;
+  background: #00ff88;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+
+.text-content {
+  margin-top: 400px;
+  position: relative;
+  max-width: 520px;
+}
+
+.text-content h1 {
+  color: #FFFFFF;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  color: #FFFFFF;
+  width: 550px;
+  height: 20px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.subscribe-btn {
+  background: transparent;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.subscribe-btn img {
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Small device  */
 
@@ -81,6 +185,9 @@
   .menu, .btn-primary {
     display: none;
   }
+  
+
+
 }
 
 /* Medium Device */
@@ -95,6 +202,9 @@
     display: none;
   }
 
-  
+
   
 }
+
+/* Large Device */
+
