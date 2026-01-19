@@ -19,7 +19,8 @@ body{
 }
 
 .nav-container {
-  max-width: 1200px;
+  width: 71%;
+  max-width: 1600px;
   margin: auto;
   padding: 0 20px;
   display: grid;
@@ -74,7 +75,7 @@ body{
   align-items: center;
 }
 .line1{
-  width: 1600px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   height: 1px;
@@ -83,13 +84,11 @@ body{
 /* Banner Section */
 
 .container {
-  max-width: 1600px;
-  margin: 0 auto;
+  padding: 20px;
 }
 
 .hero-content {
   position: relative;
-  height: 760px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,19 +104,20 @@ body{
 
 .hero-bg img {
   width: 100%;
+  height: 110%;
   background-position: center;
   background-size: cover;
 }
 
 .image-content {
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -55%);
 }
 
 .hero-circle {
-  width: 360px;
+  width: 400px;
 }
 
 .microphone {
@@ -125,7 +125,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90px;
+  width: 120px;
 }
 .new-badge {
   position: absolute;
@@ -133,10 +133,10 @@ body{
   left:+250px;
   background: #00ff88;
   color: #000;
-  font-style: 300;
+  font-style: 200;
   font-size: 20px;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 
@@ -144,17 +144,16 @@ body{
   margin-top: 400px;
   position: relative;
   max-width: 520px;
+  margin-bottom: 20px;
 }
 
 .container h2 {
   color: #FFFFFF;
   font-size: 56px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 100px;
 }
 
-.text-content p {
-  width: 100%;
+.text-content, .choose-section p {
   height: auto;
   color: #FFFFFF;
 }
@@ -191,8 +190,9 @@ body{
 }
 
 .line {
-  width: 1200px;
-  margin-left: 140px;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
   height: 1px;
   background: rgba(255, 255, 255, 0.12);
 }
@@ -204,7 +204,9 @@ body{
   color:rgba(0, 255, 136, 1) ;
   margin-bottom: 10px;
 }
- 
+.card-title:hover{
+    transform: translateY(-5px);
+}
 .about-card {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -212,10 +214,62 @@ body{
   margin-top: 100px;
    margin-bottom: 100px;
 }
+.choose-section{
+  background:  rgba(37, 13, 68, 1); 
+  margin: 20px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1{
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  color: #FFFFFF;
+  font-style: Bold;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 10px ;
+  margin-bottom: 10px;
+}
+
+.box{
+  padding: 20px;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+}
+.choose-box{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr) ;
+  gap: 20px;
+}
+
+.box-1 {
+  grid-row: span 2;
+}
+.box-2 ,.box-3, .box-4 {
+  grid-column: span 2;
+}
+.box-5{
+  grid-column: span 1;
+}
+.box img{
+  padding: 5px;
+}
+
 
 /* Small device  */
 
 @media screen and (max-width: 576px) {
+   body*{
+    margin: 0;
+}
   .nav-container, .menu-btn {
     grid-template-columns: repeat(1, 1fr);
     display: flex;
@@ -225,8 +279,9 @@ body{
     width: auto;
   }
   .line{
-    width: 500px;
-    margin-left: 10px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .menu, .btn-primary {
     display: none;
@@ -234,20 +289,14 @@ body{
   .logo{
     font-size: 15px;
   }
-  .hero-bg img {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-  }
   .image-content {
-    top: 14%;
     left: 50%;
   }
   .hero-circle { 
-    width: 135px;
+    width: 130px;
   }
   .microphone {
-    width: 35px;
+    width: 40px;
   }
   .new-badge {
     font-size: 10px;
@@ -260,19 +309,13 @@ body{
   }
 
   .container h2 {
+    margin-top: 220px;
     font-size: 28px;
   }
 
   .text-content p {
     font-size: 14px;
     line-height: 22px;
-  }
-  .section-title2{
-    margin-top: -210px;
-  }
-
-  .section-title{
-    margin-top: -400px;
   }
   .about {
     margin: 2px 2px;
@@ -283,7 +326,59 @@ body{
     grid-template-columns: repeat(2,1fr);
   }
 
-
+  .choose-box{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+  .box-1{
+    position: fixed;
+  }
 }
+
+
+/* Medium Device  */
+
+@media screen and (max-width: 992px){
+  .menu, .btn-primary {
+    display: none;
+  }
+
+  .nav-container, .menu-btn {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: space-between;
+  }
+  .line1{
+    width: auto;
+  }
+  .line{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .logo{
+    font-size: 20px;
+  }
+  .image-content {
+    left: 50%;
+  }
+  .hero-circle { 
+    width: 230px;
+  }
+  .microphone {
+    width: 80px;
+  }
+  .new-badge {
+    font-size: 20px;
+    top: 24px;
+    left:+180px;
+  }
+  .about-card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 
 /* Large Device */
