@@ -71,8 +71,7 @@
   justify-content: center;
   align-items: center;
 }
-
-/* Hero Section */
+/* Banner Section */
 
 .container {
   max-width: 1600px;
@@ -138,7 +137,7 @@
   max-width: 520px;
 }
 
-.text-content h1 {
+.container h1 {
   color: #FFFFFF;
   font-size: 56px;
   font-weight: 700;
@@ -150,6 +149,10 @@
   width: 550px;
   height: 20px;
   margin-bottom: 25px;
+}
+.about p{
+  color: #FFFFFF;
+  margin-bottom: 125px;
 }
 
 .hero-buttons {
@@ -173,6 +176,33 @@
   align-items: center;
 }
 
+.about{
+  justify-content: center;
+  text-align: center;
+  background-color: #1A0B2E;
+}
+.line {
+  width: 1200px;
+  margin-left: 140px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+.card-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 50px;
+  text-transform: capitalize;
+  color:rgba(0, 255, 136, 1) ;
+  margin-bottom: 10px;
+}
+ 
+.about-card {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  margin-top: 100px;
+   margin-bottom: 100px;
+}
 
 /* Small device  */
 
@@ -201,8 +231,7 @@
   .menu, .btn-primary {
     display: none;
   }
-
-
+  
   
 }
 
