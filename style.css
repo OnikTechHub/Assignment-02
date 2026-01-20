@@ -415,6 +415,15 @@ iframe{
     gap: 20px;
   }
 
+  
+  iframe{
+    width: 200px;
+  }
+
+  .meet-section{
+    margin: 0px;
+  }
+
   .meet-container {
     flex-direction: column;
     text-align: center;
@@ -469,7 +478,7 @@ iframe{
 }
   
   .features{
-    width: 450px;
+    width: 350px;
     height: 440px;
     border-radius:  24px ;
     padding: 10px;
@@ -481,7 +490,18 @@ iframe{
     gap: 20px;
   }
   iframe{
-    width: 430px;
+    width: 330px;
+  }
+
+  
+  .meet-section{
+    margin: 0px;
+  }
+
+  .meet-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 }
 
