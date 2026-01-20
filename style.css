@@ -68,11 +68,17 @@ body{
   background: linear-gradient(45deg,#F7E93F, #FB09B4, #9100F8);
   color: #FFFFFF;
   cursor: pointer;
+  transition: 0.3s;
 }
 .btn-primary img {
   width: 20px;
   justify-content: center;
   align-items: center;
+}
+
+ 
+.btn-primary:hover{
+    transform: translateY(-5px);
 }
 .line1{
   width: auto;
@@ -143,7 +149,9 @@ body{
     transform: translateY(-5px);
     background-color: #59d199;
 }
-
+.btn-primary2:hover{
+  transform: translateY(-5px);
+}
 .text-content {
   margin-top: 400px;
   position: relative;
@@ -173,7 +181,13 @@ body{
   justify-content: center;
   gap: 15px;
 }
+.btn-primary2:hover{
+    transform: translateY(-5px);
+}
 
+.subscribe-btn:hover{
+  transform: translateY(-5px);
+}
 .subscribe-btn {
   background: transparent;
   border: 1px solid #00ff88;
@@ -345,12 +359,11 @@ footer{
   
 }
 .footer-title{
-  font-style: Extra Bold;
   font-size: 60px;
   font-weight: 800;
 }
 .footer-content{
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -486,11 +499,7 @@ footer{
   .footer-title {
     font-size: 36px;
   }
-
-  footer {
-    
-  }
-
+.
 }
 
 
