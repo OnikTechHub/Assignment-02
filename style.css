@@ -138,7 +138,10 @@ body{
   padding: 4px 10px;
   border-radius: 30px;
 }
-
+.new-badge:hover{
+    transform: translateY(-5px);
+    background-color: #59d199;
+}
 
 .text-content {
   margin-top: 400px;
@@ -153,13 +156,15 @@ body{
   margin-top: 100px;
 }
 
-.text-content, .choose-section p {
+.text-content p {
   height: auto;
+  opacity: 60%;
   color: #FFFFFF;
 }
 .about p{
   color: #FFFFFF;
   margin-bottom: 125px;
+  opacity: 60%;
 }
 
 .hero-buttons {
@@ -219,8 +224,17 @@ body{
   margin: 20px auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  gap: 50px;
 }
-
+.choose{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.choose-section p{
+  color: #FFFFFF;
+  margin-bottom: 125px;
+  opacity: 60%;
+}
 h1{
   color: #FFFFFF;
   display: flex;
@@ -262,13 +276,37 @@ h5 {
 .box img{
   padding: 5px;
 }
+.features{
+  width: 300px;
+  height: 440px;
+  border-radius:  24px ;
+  background: rgba(37, 13, 68, 1);  
+  padding: 10px;
+}
 
+.features:hover{
+    transform: translateY(-5px);
+}
+
+.feature-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  margin: 20px 200px;
+}
+.features p{
+  color: #FFFFFF;
+  opacity: 60%;}
+
+iframe{
+  border-radius: 24px 24px 0px 0px;
+}
 
 /* Small device  */
 
 @media screen and (max-width: 576px) {
-   body*{
-    margin: 0;
+   body, .about{
+    margin-top: 0px;
 }
   .nav-container, .menu-btn {
     grid-template-columns: repeat(1, 1fr);
@@ -307,9 +345,8 @@ h5 {
     margin-top: 0;
     padding: 0 10px;
   }
-
   .container h2 {
-    margin-top: 220px;
+    margin-top: 320px;
     font-size: 28px;
   }
 
@@ -318,7 +355,7 @@ h5 {
     line-height: 22px;
   }
   .about {
-    margin: 2px 2px;
+    margin-top: -250px;
   }
   
   .about-card {
@@ -326,12 +363,31 @@ h5 {
     grid-template-columns: repeat(2,1fr);
   }
 
+  .choose{
+  margin-left: 20px;
+  margin-right: 20px;
+}
   .choose-box{
     grid-template-columns: repeat(1,1fr);
     gap: 20px;
   }
   .box-1{
     position: fixed;
+  }
+  .features{
+    width: 450px;
+    height: 440px;
+    border-radius:  24px ;
+    padding: 10px;
+}
+  .feature-container{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  iframe{
+    width: 430px;
   }
 }
 
@@ -352,9 +408,7 @@ h5 {
     width: auto;
   }
   .line{
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+    width: auto;
   }
   
   .logo{
@@ -377,6 +431,26 @@ h5 {
   .about-card {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+  .choose{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+  
+  .features{
+    width: 450px;
+    height: 440px;
+    border-radius:  24px ;
+    padding: 10px;
+}
+  .feature-container{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  iframe{
+    width: 430px;
   }
 }
 
